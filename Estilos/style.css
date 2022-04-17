@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 'Nunito', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* 'Bebas Neue', cursive; */
+
+:root {
+/* FFD166 Amarelo 
+   E3D26F Outro amarelo 
+   F1F0CC Mais um amarelo
+   797B84 Cinza
+   EDD2E0 Rosinha
+   96BBBB Azul
+   87C38F Verdinho
+   C1AE7C Marromzinho*/
+
+    --cor0: #96BBBB;
+    --cor1: #D4B2D8;
+    --cor2: #CF444D;
+    --cor3: #CC1421;
+    --cor4: #750D14; 
+
+    --fontedestaque: 'Bebas Neue', cursive;;
+    --fontepadrao: 'Nunito', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(40deg, #CC1421, #CF444D);
+    background-attachment: fixed;
+}
+
+h1, h3 {
+    text-shadow: 2px 2px 4px #0000003f;
+}
+
+body h1, h3, p, a {
+    font-family: var(--fontepadrao);
+}
+
+/* Cabeçalho */
+
+
+
+.header {
+    background-color: white;
+    height: 50px;
+    box-shadow: 2px 2px 5px #00000057;
+}
+
+.collapse {
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.nav_link { /* Links do menu de navegação */
+    color: white;
+    background-image: linear-gradient(to right, #CC1421, #CF444D);
+    border-radius: 5px;
+    font-size: 19px;
+    margin-right: 10px;
+    padding: 3px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.356) ;
+    transition: .5s;
+}
+
+.nav_link:hover {
+    padding: 6px 9px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--cor4);
+}
+
+/* Conteudo principal */
+.icone_home {
+    width: 20px;
+    height: 20px;
+}
+
+.principal {
+    height: 90vh;
+    /* Centralizando o conteudo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectxt {
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.349);
+    border-radius: 15px;
+}
+
+.col-md > p {
+    margin-top: 10px;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||| Pagina principal ||||||||||||||||||||||||||||||||||||||||*/
+.img_link {
+    margin-bottom: 15px;
+    width: 250px;
+    height: 125px;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.432);
+    opacity: 60%;
+    transition-duration: .2s;
+}
+
+.img_link:hover {
+    opacity: 100%;
+}
+
+.proj {
+    background-color: var(--cor0);
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.349);
+}
+
+.proj > h1 {
+    font-size: 24px;
+}
+
+/* /////////////////////////////// Pagina de jogos ///////////////////////////////*/
+.scroll {
+    overflow-y: scroll;
+    height: 150px;
+}
+
+.scroll::-webkit-scrollbar {
+    border-radius: 8px;
+    width: 10px;
+    background-color: var(--cor1);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: var(--cor2);
+}
+
+/* |||||||||||||||||||||||||||||||\ Pagina de contato ||||||||||||||||||||||||||||*/
+.icone {
+    width: 30px;
+    height: 30px;
+}
+
+.cont {
+    text-align: left;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.411);
+    transition-duration: .5s;
+}
+
+.social:hover {
+    width: 55px;
+    height: 55px; 
+}
+
+.hub {
+    border-radius: 50%;
+}
